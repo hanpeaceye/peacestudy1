@@ -4,26 +4,24 @@
   <title>WEB1 - Welcome</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
-
     <script>
       var restaurants = ["백구식당","요리왕","초량돼지","카레마치","삼군김치찌개","계동치킨","얌샘김밥","크라이치즈버거","전선생"];
       var total = restaurants.length;
       var random = Math.floor(Math.random() * total);
       var i = 0;
        function choice(){
-         document.write(restaurants[random]);
-         document.write('<div>'+ '<input type="button" onclick="location.href=location.href" value="다시해!!"></input>'+'</div>');
+         document.write('<div style="font-size:30px";>'+ restaurants[random] + '<p>'+　"당첨!"+'</p>' + '</div>');
+         document.write('<div>'+ '<input type="button" style="width:100%height:30pt;font-size:20px" onclick="location.href=location.href" value="다시해!!"></input>'+'</div>');
         }
 
         while(i < total){
-        document.write('<li>'+restaurants[i]+'</li>')
+        document.write('<li style="font-size:30px";>'+restaurants[i]+'</li>')
         i = i + 1;
         }
 
     </script>
-
-    <input type="button" onclick="choice()" value="오늘의 식당은?"></input>
+    <input type="button" style="width:100%;height:30pt;font-size:20px" onclick="choice()" value="오늘의 식당은?"></input>
 
 
 </html>
+
