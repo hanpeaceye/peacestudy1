@@ -8,6 +8,8 @@
     <script>
       var restaurants = ["백구식당","요리왕","초량돼지","카레마치","삼군김치찌개","계동치킨","얌샘김밥","크라이치즈버거","전선생","명동할머니국수"];
       var random = Math.floor(Math.random() * total);
+      var total = restaurants.length;
+
       var i = 0;
         function deleteArr (index) {
           restaurants.splice(index,1);
@@ -25,7 +27,6 @@
        i = i + 1;
 
        };
-        var total = restaurants.length;
 
 
 
