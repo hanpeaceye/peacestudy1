@@ -8,7 +8,8 @@
 
 <!-- "백구식당","초량돼지","카레마치","삼군김치찌개","얌샘김밥","전선생",,"이태리부대찌게","후레시빌","찌치중화식탁","희래등","우리집","족발보쌈마을","록스플레이트","길농원","보스골뱅이","임고집한우" -->
     <script>
-      var restaurants = ["명동할머니국수","전주콩나물국밥","남산옥","백구식당","초량돼지","카레마치","삼군김치찌개","얌샘김밥","전선생","이태리부대찌게","후레시빌","찌치중화식탁","희래등","우리집","족발보쌈마을","록스플레이트","길농원","보스골뱅이","임고집한우"];
+      var restaurants = ["명동할머니국수","전주콩나물국밥","남산옥","백구식당","초량돼지","카레마치","삼군김치찌개","얌샘김밥","전선생","후레시빌","찌치중화식탁","희래등",
+                         "우리집","족발보쌈마을","록스플레이트","길농원","임고집한우","크라이치즈버거"];
       var total = restaurants.length;
       var random = Math.floor(Math.random() * total);
       var i = 0;
@@ -20,9 +21,6 @@
          document.write('<div style="font-size:7vw";>'+ restaurants[random] + '<p>'+　"당첨!"+'</p>' + '</div>');
          if(restaurants[random]=="남산옥"){
            document.write('<div style="font-size:7vw";>'+"안돼 은지님이 싫어해!"+'</p>' + '</div>');
-           }
-         else if(restaurants[random]=="전주콩나물국밥"){
-           document.write('<div style="font-size:7vw";>'+"안돼 성민님이 싫어해!"+'</p>' + '</div>');
            }
          else if(restaurants[random]=="카레마치"){
            document.write('<div style="font-size:7vw";>'+"안돼 성희님이 싫어해!"+'</p>' + '</div>');
@@ -37,14 +35,12 @@
 
         while(i < total){
           document.write('<li style="font-size:7vw";>'+restaurants[i])
-          document.write('<input type="image" src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/48x48/delete.png" onclick="deleteArr(' + i + ')""></input>'+'</li>')
+       // document.write('<input type="image" src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/48x48/delete.png" onclick="deleteArr(' + i + ')""></input>'+'</li>')
           i = i + 1;
 
         };
 
     </script>
-
-
 
 
 </html>
